@@ -10,6 +10,11 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+.container {
+	width: 300px;
+	margin: auto;
+}
+
 /*Header*/
 header {
 	background: #2d4a22;
