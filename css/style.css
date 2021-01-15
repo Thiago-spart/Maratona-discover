@@ -1,6 +1,6 @@
 /*Global*/
 :root {
-	--color-black: #363f5f;
+	--blue-black: #363f5f;
 }
 
 * {
@@ -22,7 +22,7 @@ body {
 h2 {
 	margin-top: 3.2rem;
 	margin-bottom: 0.8rem;
-	color: var(--color-black);
+	color: var(--blue-black);
 	font-weight: normal; 
 }
 
@@ -55,7 +55,7 @@ header {
 	padding: 1.5rem 2rem;
 	border-radius: 0.25rem;
 	margin-bottom: 2rem;
-	color: var(--color-black);
+	color: var(--blue-black);
 }
 
 /*Footer*/
