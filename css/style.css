@@ -107,6 +107,14 @@ table tbody td {
 	font-weight: normal;
 }
 
+td.description {
+	color: var(--blue-black);
+}
+
+td.income {
+	color: #12a454;
+}
+
 /*Footer*/
 footer {
 	text-align: center;
