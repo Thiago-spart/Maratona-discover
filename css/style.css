@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-	width: 300px;
+	width: min(90vw, 500px);
 	margin: auto;
 }
 
@@ -31,3 +31,7 @@ header {
 /*Balance*/
 
 
+/*Footer*/
+footer {
+	text-align: center;
+}
