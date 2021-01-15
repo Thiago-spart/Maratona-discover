@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-	width: min(90vw, 500px);
+	width: min(90vw, 800px);
 	margin: auto;
 }
 
