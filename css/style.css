@@ -92,6 +92,11 @@ table td {
 	background: #fff;
 }
 
+table thead tr:first-child,
+table tbody tr:first-child {
+	
+}
+
 /*Footer*/
 footer {
 	text-align: center;
