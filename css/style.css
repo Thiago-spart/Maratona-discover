@@ -13,6 +13,9 @@ body {
 /*Header*/
 header {
 	background: #2d4a22;
+	padding: 2rem 0;
+	text-align: center;
+
 }
 
 header h1 {
