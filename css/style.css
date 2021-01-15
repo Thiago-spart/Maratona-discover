@@ -29,7 +29,13 @@ header {
 }
 
 /*Balance*/
+#balance {
+	margin-top: -8rem;
+}
 
+#balance h2{
+	color: #fff;
+}
 
 /*Footer*/
 footer {
