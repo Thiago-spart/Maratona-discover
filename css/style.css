@@ -82,7 +82,10 @@ header {
 
 table th {
 	background: #fff;
-	opacity: 0.6;
+	font-weight: normal;
+	padding: 1rem 2rem;
+	text-align: left; 
+	color: #969cb3;
 }
 
 table td {
