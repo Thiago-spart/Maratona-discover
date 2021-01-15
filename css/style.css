@@ -94,14 +94,14 @@ table tr:hover {
 	opacity: 1;
 }
 
-table th {
+table thead th {
 	background: #fff;
 	font-weight: normal;
 	padding: 1rem 2rem;
 	text-align: left; 
 }
 
-table td {
+table tbody td {
 	background: #fff;
 	padding: 1rem 2rem;
 	font-weight: normal;
