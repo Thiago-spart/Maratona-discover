@@ -74,6 +74,21 @@ header {
 	color: #fff;
 }
 
+/*Table*/
+#data-table {
+	width: 100%;
+	border-spacing: 0 0.5rem;
+} 
+
+table th {
+	background: #fff;
+	opacity: 0.6;
+}
+
+table td {
+	background: #fff;
+}
+
 /*Footer*/
 footer {
 	text-align: center;
