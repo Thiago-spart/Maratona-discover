@@ -46,7 +46,11 @@ header {
 }
 
 /*Cards*/
-
+.card {
+	background: #fff;
+	padding: 1.5rem 2rem;
+	border-radius: 0.25rem;
+}
 
 /*Footer*/
 footer {
