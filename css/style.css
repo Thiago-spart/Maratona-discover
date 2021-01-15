@@ -92,9 +92,9 @@ table td {
 	background: #fff;
 }
 
-table thead tr:first-child,
-table tbody tr:first-child {
-	
+table thead tr td:first-child,
+table tbody tr td:first-child {
+
 }
 
 /*Footer*/
