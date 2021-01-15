@@ -18,7 +18,8 @@ body {
 h2 {
 	margin-top: 3.2rem;
 	margin-bottom: 0.8rem;
-	color: #363f5f; 
+	color: #363f5f;
+	font-weight: normal; 
 }
 
 /*Header*/
@@ -41,7 +42,11 @@ header {
 
 #balance h2{
 	color: #fff;
+	margin-top: 0;
 }
+
+/*Cards*/
+
 
 /*Footer*/
 footer {
