@@ -18,7 +18,9 @@ body {
 h2 {
 	margin-top: 3.2rem;
 	margin-bottom: 0.8rem;
+	color: #363f5f; 
 }
+
 /*Header*/
 header {
 	background: #2d4a22;
