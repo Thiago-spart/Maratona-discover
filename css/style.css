@@ -39,7 +39,14 @@ h2 {
 }
 
 /*Links | Buttons*/
+a {
+	color: #2d4a22;
+	text-decoration: none;
+}
 
+a:hover {
+	color: #3dd705;
+}
 
 /*Header*/
 header {
