@@ -40,12 +40,16 @@ h2 {
 
 /*Links | Buttons*/
 a {
-	color: #2d4a22;
+	color: #49aa26;
 	text-decoration: none;
 }
 
 a:hover {
 	color: #3dd705;
+}
+
+.button.new {
+	
 }
 
 /*Header*/
