@@ -206,6 +206,21 @@ input {
 	margin-top: 0.8rem;
 }
 
+.input-group small {
+	opacity: 0.4;
+}
+
+.input-group.actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} 
+
+.input-group.actions .button,
+.input-group.actions button {
+
+}
+
 /*Footer*/
 footer {
 	text-align: center;
