@@ -52,9 +52,19 @@ a:hover {
 	color: #3dd705;
 }
 
+button {
+	width: 100%;
+	height: 50px;
+	border: none;
+}
+
 .button.new {
 	display: inline-block;
 	margin-bottom: .8rem;
+}
+
+.button.cancel {
+
 }
 
 /*Header*/
@@ -218,7 +228,7 @@ input {
 
 .input-group.actions .button,
 .input-group.actions button {
-
+	width: 48%;
 }
 
 /*Footer*/
