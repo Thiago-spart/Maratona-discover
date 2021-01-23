@@ -1,6 +1,7 @@
 /*Global*/
 :root {
 	--blue-black: #363f5f;
+	--green: #49aa26;
 }
 
 * {
@@ -44,7 +45,7 @@ h2 {
 
 /*Links | Buttons*/
 a {
-	color: #49aa26;
+	color: var(--green);
 	text-decoration: none;
 }
 
@@ -114,7 +115,7 @@ header {
 }
 
 .card.total {
-	background: #49aa26;
+	background: var(--green);
 	color: #fff;
 }
 
