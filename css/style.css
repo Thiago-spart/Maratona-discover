@@ -171,6 +171,12 @@ td.expense {
 	top: 0;
 }
 
+.modal {
+	background: #f0f2f5;
+	padding: 2.4rem;
+	position: relative;
+}
+
 /*Footer*/
 footer {
 	text-align: center;
