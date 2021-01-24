@@ -1,8 +1,8 @@
-const Modal = {
+Modal = {
 	open(){
-
+		alert('eae')
 	},
 	close(){
-		
+
 	}
 }
