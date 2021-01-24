@@ -60,13 +60,14 @@ button {
 	height: 50px;
 	border: none;
 	background: var(--green);
+	color: #fff;
 	padding: 0;
 	border-radius: 0.25rem;
 	cursor: pointer;
 }
 
 button:hover {
-	color: var(--light-green);
+	background: var(--light-green);
 }
 
 .button.new {
