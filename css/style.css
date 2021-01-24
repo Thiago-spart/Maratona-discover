@@ -3,6 +3,7 @@
 	--blue-black: #363f5f;
 	--green: #49aa26;
 	--light-green: #3dd705;
+	--red: #e92929;
 }
 
 * {
@@ -74,7 +75,9 @@ button:hover {
 }
 
 .button.cancel {
-	color: #e92929;
+	color: var(--red);
+	border: 2px solid var(--red);
+	
 }
 
 /*Header*/
