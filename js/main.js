@@ -92,6 +92,9 @@ const DOM = {
 		document
 			.getElementById("totalDisplay")
 			.innerHTML = Utils.formatCurrency(Transaction.total())
+	},
+	clearTransactions() {
+		DOM.transactionsContainer.innerHTML = ""
 	}
 }
 
@@ -117,9 +120,12 @@ const App = {
 		DOM.updateBalance()
 	},
 	reload() {
+		DOM.clearTransactions()
 		App.init()
 	}
 }
+
+App.init()
 
 Transaction.add({
 	id: 39,
@@ -127,5 +133,3 @@ Transaction.add({
 	amount: 20000,
 	date: "23/01/2021"
 })
-
-App.reload()
