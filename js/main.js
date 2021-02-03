@@ -112,7 +112,9 @@ const Utils = {
 }
 
 const Form = {
-	
+	submit(event) {
+		
+	}
 }
 
 const App = {
