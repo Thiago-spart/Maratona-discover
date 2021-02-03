@@ -13,7 +13,8 @@ const Modal = {
 	}
 }
 
-const transactions = [
+const Transaction = {
+	all: [
 	{
 		description: "Luz",
 		amount: -50000,
@@ -28,10 +29,7 @@ const transactions = [
 		description: "Internet",
 		amount: -20000,
 		date: "23/01/2021"
-}]
-
-const Transaction = {
-	all: transactions,
+	}],
 	add(transaction) {
 		Transaction.all.push(transaction)
 		App.reload()
@@ -111,6 +109,10 @@ const Utils = {
 		})
 		return signal + value
 	}
+}
+
+const Form = {
+	
 }
 
 const App = {
