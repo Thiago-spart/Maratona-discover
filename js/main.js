@@ -137,6 +137,12 @@ const Form = {
 
 	submit(event) {
 		event.preventDefault()
+		
+		try {
+			Form.validateFields()
+		} catch(error) {
+			alert(error)
+		}
 
 		Form.validateFields()
 		Form.formatDate()
