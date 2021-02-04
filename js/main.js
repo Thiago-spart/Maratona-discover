@@ -99,6 +99,10 @@ const DOM = {
 }
 
 const Utils = {
+	formatAmount(value) {
+		value = Number(value) * 100
+	},
+
 	formatCurrency(value) {
 		const signal = Number(value) < 0 ? "-" : ""
 		value = String(value).replace(/\D/g, "aids")
@@ -133,7 +137,10 @@ const Form = {
 		} 
 	},
 
-	formatDate() {},
+	formatValues() {
+		let { description, amount, date } = Form.getValues()
+
+	},
 
 	submit(event) {
 		event.preventDefault()
@@ -145,7 +152,7 @@ const Form = {
 		}
 
 		Form.validateFields()
-		Form.formatDate()
+		Form.formatValues()
 
 	}
 }
