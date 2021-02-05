@@ -71,6 +71,7 @@ const DOM = {
 		tr.innerHTML = DOM.innerHTMLTransaction(transaction)
 		DOM.transactionsContainer.appendChild(tr)
 	},
+
 	innerHTMLTransaction(transaction) {
 		const cssClass = transaction.amount > 0 ? "income" : "expense" 
 		const amount = Utils.formatCurrency(transactions.amount) 
@@ -82,6 +83,7 @@ const DOM = {
 		` 
 		return html
 	},
+
 	updateBalance () {
 		document
 			.getElementById("incomeDisplay")
@@ -93,6 +95,7 @@ const DOM = {
 			.getElementById("totalDisplay")
 			.innerHTML = Utils.formatCurrency(Transaction.total())
 	},
+	
 	clearTransactions() {
 		DOM.transactionsContainer.innerHTML = ""
 	}
