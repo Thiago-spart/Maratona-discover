@@ -101,8 +101,8 @@ const DOM = {
 
 const Utils = {
 	formatAmount(value) {
-		value = Number(value) * 100
-		return value
+		value = value * 100
+		return Math.round(value) 
 	},
 
 	formatDate(Date) {
@@ -186,6 +186,7 @@ const App = {
 		Transaction.all.forEach(DOM.addTransaction)
 
 		DOM.updateBalance()
+		Storage.set(Transaction.all)
 	},
 	reload() {
 		DOM.clearTransactions()
