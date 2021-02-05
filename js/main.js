@@ -147,6 +147,22 @@ const Form = {
 		let { description, amount, date } = Form.getValues()
 		amount = Utils.formatAmount(amount)
 		date = Utils.formatDate(date)
+
+		return {
+			description,
+			amount,
+			date
+		}
+	},
+
+	saveTransaction(transaction) {
+		Transaction.addTransaction(transaction) //addTransaction
+	},
+
+	clearFields() {
+		Form.description = ""
+		Form.amount = ""
+		Form.date = ""
 	},
 
 	submit(event) {
@@ -154,13 +170,13 @@ const Form = {
 		
 		try {
 			Form.validateFields()
+			const transaction = Form.validateFields()
+			Form.saveTransaction(transaction)
+			Form.clearFields()
+			Modal.close()
 		} catch(error) {
 			alert(error)
 		}
-
-		Form.validateFields()
-		Form.formatValues()
-
 	}
 }
 
