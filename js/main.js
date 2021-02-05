@@ -68,18 +68,21 @@ const DOM = {
 	addTransaction(transaction, index) {
 		const tr = document.createElement('tr')//,
 			//transaction = transaction[index]
-		tr.innerHTML = DOM.innerHTMLTransaction(transaction)
+		tr.innerHTML = DOM.innerHTMLTransaction(transaction, index)
+		tr.dataset.index = index
 		DOM.transactionsContainer.appendChild(tr)
 	},
 
-	innerHTMLTransaction(transaction) {
+	innerHTMLTransaction(transaction, index) {
 		const cssClass = transaction.amount > 0 ? "income" : "expense" 
 		const amount = Utils.formatCurrency(transactions.amount) 
 		const html = `
 			<td class="description">${transaction.description}</td>
 			<td class=${cssClass}>${amount}</td>
 			<td class="date">${transaction.date}</td>
-			<td><img src="assets/minus.svg" alt="Remover transação"></td>
+			<td>
+				<img onclick="Transaction.remove(${index})" src="assets/minus.svg" alt="Remover transação">
+			</td>
 		` 
 		return html
 	},
@@ -95,7 +98,7 @@ const DOM = {
 			.getElementById("totalDisplay")
 			.innerHTML = Utils.formatCurrency(Transaction.total())
 	},
-	
+
 	clearTransactions() {
 		DOM.transactionsContainer.innerHTML = ""
 	}
@@ -183,11 +186,13 @@ const Form = {
 	}
 }
 
+const Storage = {
+
+},
+
 const App = {
 	init() {
-		Transaction.all.forEach(transaction => {
-			DOM.addTransaction(transactions)
-		})
+		Transaction.all.forEach(DOM.addTransaction)
 
 		DOM.updateBalance()
 	},
